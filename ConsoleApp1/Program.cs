@@ -15,11 +15,16 @@ namespace ConsoleApp1
             Console.WriteLine("Insert the number M for search other factorial");
             int m = Convert.ToInt32(Console.ReadLine());
             int factN = 1;
-            for (int i = 1; i<= n; i++)
+            int factM = 1;
+            for (int i = 1; i <= n; i++)
             {
-                factN *= i;         
+                factN *= i;
             }
-            Console.WriteLine("N! - M! = " + (factN)) ;
+            for (int i = 1; i <= m; i++)
+            {
+                factM *= i;
+            }
+            Console.WriteLine("N! - M! = " + (factN - factM));
             Console.ReadKey();
         }
     }
